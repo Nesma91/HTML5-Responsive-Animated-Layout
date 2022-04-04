@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: -webkit-box;
+  width: 80%;
+  height: 550px;
+  margin: 10px auto;
+  border: 3px solid rgb(185, 241, 71);
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: rgb(104, 219, 171) 10px 10px 100px inset,
+    15px 15px 20px rgb(177, 88, 103);
+  transition: all 5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.one {
+  width: 30%;
+  height: 500px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  /* resize: horizontal; */
+  overflow: auto;
+  column-count: 3;
+  column-rule: 3px solid red;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 15px;
+  box-shadow: rgb(49, 231, 49) 10px 10px 100px inset;
+}
+
+mark {
+  background-color: red;
+}
+
+mark:hover {
+  background-image: linear-gradient(to top, yellow 20%, red, pink);
+  transition: 5s;
+}
+
+.images {
+  /* column-count: 4; */
+  text-align: center;
+  margin: auto 5%;
+}
+
+.two {
+  width: 50%;
+  height: 500px;
+  border: 3px solid blue;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  /* resize: horizontal; */
+  overflow: auto;
+  box-shadow: rgb(112, 223, 189) 10px 10px 100px inset;
+}
+
+img {
+  width: 110px;
+  height: 110px;
+  margin: 5px;
+  border: 2px solid blue;
+  border-radius: 5px;
+  box-shadow: rgb(177, 88, 103) 2px 5px 5px;
+}
+
+.container:hover {
+  transform: skewX(10deg);
+  transition: all 5s;
+  box-shadow: rgb(97, 211, 164) 10px 10px 100px inset,
+    rgb(66, 173, 128) 10px 10px 50px;
+}
+
+img:hover {
+  transform: scale(1.2, 1.1);
+  box-shadow: rgb(223, 213, 84) 2px 5px 5px;
+  transition: 2s;
+}
+
+.container:active {
+  box-shadow: 15px 20px 50px rgb(223, 19, 19);
+  transition: 5s;
+  transform: translate(5);
+  -webkit-transform: scale(0.5);
+}
+
+img:active {
+  box-shadow: 15px 20px 25px rgb(223, 19, 19);
+  transform: scale(4);
+}
+
+mark:active {
+  background-color: rgb(15, 95, 75);
+}

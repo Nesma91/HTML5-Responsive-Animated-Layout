@@ -1,0 +1,31 @@
+.container:hover {
+  transform: none;
+}
+
+.images {
+  column-count: 1;
+}
+img {
+  transform: rotate(20deg);
+  box-shadow: blue 2px 5px 10px;
+}
+.one {
+  column-rule: none;
+  border: 3px solid rgb(167, 73, 120);
+  resize: none;
+  font-size: 10px;
+}
+mark {
+  background-color: blue;
+  color: white;
+}
+img:hover {
+  box-shadow: orange 2px 5px 5px;
+  border: 2px solid rgb(152, 152, 233);
+  border-radius: 2px;
+}
+img:active {
+  border: 2px dashed blue;
+  box-shadow: red 2px 5px 5px;
+  transform: none;
+}
